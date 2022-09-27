@@ -64,10 +64,10 @@
 }
 
 .search-label {
-  padding: 5px 12px;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: rgba(22, 24, 35, 0.5);
+    padding: 5px 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
 }
 
 .clear,
@@ -93,4 +93,11 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+
+.more-btn {
+    padding: 4px 8px;
+    font-size: 2rem;
+    margin-left: 28px;
+    background-color: transparent;
 }
