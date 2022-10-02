@@ -39,6 +39,7 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
             interactive
             offset={[12, 8]}
             delay={[0, 700]}
+            hideOnClick={hideOnClick}
             placement="bottom-end"
             render={(attrs) => (
                 <div className={cx('menu-list')} tabIndex="-1" {...attrs}>
@@ -51,12 +52,11 @@ function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn 
                                 }}
                             />
                         )}
-                        {renderItems()}
+                        <div className={cx('menu-body')}>{renderItems()}</div>
                     </PopperWrapper>
                 </div>
             )}
             onHide={() => setHistory((prev) => prev.slice(0, 1))}
-            hideOnClick={hideOnClick}
         >
             {children}
         </Tippy>
